@@ -1,3 +1,10 @@
+.DS_Store
+data/*.
+data/national
+data/states
+csv/*.csv
+csv/names/*.csv
+
 # History files
 .Rhistory
 .Rapp.history
@@ -31,3 +38,4 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+.Rproj.user
