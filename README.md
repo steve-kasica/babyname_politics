@@ -1,6 +1,6 @@
 # Baby Name Politics
 
-This is the source code in R for "How partisan is your name?" We developed these figures based on the [Social Security Administration's state-by-state data files](https://www.ssa.gov/OACT/babynames/limits.html), which report any name that was given to at least five children in that state in a given year. Of the 10,008 names that show up in at least one state, 2,805 appear in 10 and were thus sufficiently regional for our analysis.
+This is the source code in R for "[Is Your Name Democratic or Republican?](https://time.com/4606813/democrat-republican-name/)" We developed these figures based on the [Social Security Administration's state-by-state data files](https://www.ssa.gov/OACT/babynames/limits.html), which report any name that was given to at least five children in that state in a given year. Of the 10,008 names that show up in at least one state, 2,805 appear in 10 and were thus sufficiently regional for our analysis.
 
 The final product is a CSV file with all 2,805 names, merged with the 2016 political outcome in each name's top-ten states, as well as an individual CSV file for each name that has information on each of the 10 states.
 
