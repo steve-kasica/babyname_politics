@@ -47,6 +47,7 @@ filtered <- subset(top_10_names, top_10_names$RANK_N <= 10)
 
 # join names with political results
 filtered <- merge(filtered, results, by="ABBR")
+
 # and re-sort because merges always mess that up
 filtered <- filtered[order(filtered$GENDER, filtered$HANDLE, filtered$RANK_N),]
 
@@ -79,7 +80,7 @@ f <- function(handle) {
 # write csvs for every name
 lapply(top_10_roster, f)
 
-# total votes for each name among it's top-ten states
+# total votes for each name among its top-ten states
 names_trump <- aggregate(TRUMP ~ HANDLE, FUN=sum, data=filtered)
 names_clinton <- aggregate(CLINTON ~ HANDLE, FUN=sum, data=filtered)
 names_other <- aggregate(OTHER ~ HANDLE, FUN=sum, data=filtered)
